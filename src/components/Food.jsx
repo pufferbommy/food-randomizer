@@ -23,15 +23,17 @@ const Food = ({ foodsData }) => {
 
     return (
         <>
-            <h1 className="text-8xl text-blue-500">กินอะไรดี ?</h1>
+            <h1 className="text-6xl md:text-8xl text-blue-500">กินอะไรดี ?</h1>
             {clicked ? (
-                <p className="text-purple-600 my-6 text-5xl">{menu.title}</p>
+                <p className="text-center text-purple-600 my-6 text-3xl md:text-5xl">
+                    {menu.title}
+                </p>
             ) : (
                 ''
             )}
             {clicked ? (
                 <img
-                    className="rounded-2xl border-2 border-gray-50 max-h-96"
+                    className="rounded-2xl max-w-xs md:max-w-none border-2 border-gray-50 max-h-96"
                     src={menu.picUrl}
                     alt={menu.title}
                 />
@@ -40,7 +42,7 @@ const Food = ({ foodsData }) => {
             )}
             <button
                 onClick={handleRandomButton}
-                className="duration-300 mt-4 px-12 py-4 text-blue-500 bg-transparent hover:bg-blue-500 text-2xl border-2 border-blue-500 hover:text-white rounded-2xl"
+                className="duration-300 mt-4 px-8 md:px-12 py-3 md:py-4 text-blue-500 bg-transparent hover:bg-blue-500 text-2xl border-2 border-blue-500 hover:text-white rounded-2xl"
             >
                 สุ่มเลย !
             </button>
