@@ -5,6 +5,7 @@ const Food = ({ foodsData }) => {
     const [menus, setMenus] = useState(foodsData)
     const [menu, setMenu] = useState(null)
     const [clicked, setClicked] = useState(false)
+    const [day, setDay] = useState(0) //change color style by day
 
     //function
     const handleRandomButton = () => {
