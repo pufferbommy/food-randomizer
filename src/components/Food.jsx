@@ -29,17 +29,21 @@ const Food = ({ foodsData }) => {
                     {menu.title}
                 </p>
             ) : (
-                ''
+                '' //display empty
             )}
             {clicked ? (
-                <img
-                    className="rounded-2xl max-w-xs md:max-w-none border-2 border-gray-50 max-h-96"
-                    typeof="jpg"
-                    src={menu.picUrl}
-                    alt={menu.title}
-                />
+                <>
+                    <img
+                        className="rounded-2xl max-w-md border-2 border-gray-50 h-auto"
+                        src={menu.picUrl}
+                        alt={menu.title}
+                    />
+                    <p className="text-purple-600 mt-4 text-center text-xl md:text-2xl">
+                        {menu.calories} แคลอรี่
+                    </p>
+                </>
             ) : (
-                ''
+                '' //display empty
             )}
             <button
                 onClick={handleRandomButton}
