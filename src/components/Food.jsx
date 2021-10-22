@@ -15,7 +15,7 @@ const Food = ({ foodsData }) => {
 
     useEffect(() => {
         window.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter') {
+            if (event.key === 'Enter' || event.key === ' ') {
                 setMenu(menus[Math.floor(Math.random() * menus.length)])
                 setClicked(true)
             }
@@ -48,7 +48,7 @@ const Food = ({ foodsData }) => {
             )}
             <button
                 onClick={handleRandomButton}
-                className="duration-300 mt-4 px-8 md:px-12 py-3 md:py-4 text-blue-500 bg-transparent hover:bg-blue-500 text-2xl border-2 border-blue-500 hover:text-white rounded-2xl"
+                className="focus:outline-none focus:ring-0 duration-300 mt-4 px-8 md:px-12 py-3 md:py-4 text-blue-500 bg-transparent hover:bg-blue-500 text-2xl border-2 border-blue-500 hover:text-white rounded-2xl"
             >
                 {clicked ? 'สุ่มอีก !' : 'สุ่มเลย !'}
             </button>
