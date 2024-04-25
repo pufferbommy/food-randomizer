@@ -1,2 +1,3 @@
 # Demo
-![Screen Recording Apr 25 (3)](https://github.com/pufferbommy/ginaraidee/assets/87512687/de0b489e-ce52-436e-afae-67b49d89acdb)
+https://github.com/pufferbommy/ginaraidee/assets/87512687/070c70bd-ac93-4a7b-8f56-cbe377be46bf
+
